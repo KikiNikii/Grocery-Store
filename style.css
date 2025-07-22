@@ -11,6 +11,7 @@ body{
 
 .words{
 display: flex;
+flex-wrap: wrap;
 justify-content: center;
 }
 
@@ -24,12 +25,22 @@ text-decoration: none;
 
 .box{
     display: flex;
-    justify-content: wrap;
-    border-radius: 20px;
+    flex-wrap: wrap;
+    border-radius: 30px;
+    border-style:groove;
+    animation: myborder 15s infinite;
 }
 
 
 .row{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
+}
+
+@keyframes myborder {
+    10%{border-color: rgb(255, 140, 0);}
+    20%{border-color: red;}
+    20%{border-color: red;}
+    100%{border-color:rgb(255, 140, 0);}
 }
